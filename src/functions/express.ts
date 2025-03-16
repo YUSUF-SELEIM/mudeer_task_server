@@ -1,7 +1,6 @@
 import { Handler } from "@netlify/functions";
 import app from "../server";
 import http from "http";
-import url from "url";
 
 const handler: Handler = async (event, context) => {
 	const { path, httpMethod, headers, queryStringParameters, body } = event;

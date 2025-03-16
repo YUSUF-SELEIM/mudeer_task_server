@@ -13,7 +13,9 @@
 	"dependencies": {
 		"@netlify/functions": "^3.0.1",
 		"express": "^4.21.2",
-		"serverless-http": "^3.2.0"
+		"http": "^0.0.1-security",
+		"serverless-http": "^3.2.0",
+		"url": "^0.11.4"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.26.10",

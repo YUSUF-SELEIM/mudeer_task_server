@@ -1,21 +1,29 @@
 {
-  "name": "mudeer_task_server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.21.2"
-  },
-  "devDependencies": {
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.13.10",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.2"
-  }
+	"name": "mudeer_task_server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc && netlify-lambda build src/functions",
+		"serve": "netlify-lambda serve src/functions"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@netlify/functions": "^3.0.1",
+		"express": "^4.21.2",
+		"serverless-http": "^3.2.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.26.10",
+		"@babel/preset-env": "^7.26.9",
+		"@babel/preset-typescript": "^7.26.0",
+		"@types/express": "^5.0.0",
+		"@types/node": "^22.13.10",
+		"babel-loader": "^10.0.0",
+		"netlify-lambda": "^2.0.16",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.2"
+	}
 }
